@@ -1,0 +1,104 @@
+{
+    "core_variables": [
+      {
+        "id": 1,
+        "nombre": "Estado mental",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.5},
+          {"nivel": 2, "descripcion": "Letargia leve", "puntaje": 1.5},
+          {"nivel": 3, "descripcion": "Letargia moderada", "puntaje": 2.5},
+          {"nivel": 4, "descripcion": "Estupor / coma (Red Flag)", "puntaje": 3.5}
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Perfusión",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.5},
+          {"nivel": 2, "descripcion": "Leve alteración", "puntaje": 1.5},
+          {"nivel": 3, "descripcion": "Mucosas pálidas", "puntaje": 2.5},
+          {"nivel": 4, "descripcion": "Shock / Red Flag", "puntaje": 3.5}
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Temperatura",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.25},
+          {"nivel": 2, "descripcion": "Fiebre leve", "puntaje": 0.75},
+          {"nivel": 3, "descripcion": "Fiebre alta", "puntaje": 1.25},
+          {"nivel": 4, "descripcion": "Hiper/hipotermia severa (Red Flag)", "puntaje": 2}
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "Respiración",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.25},
+          {"nivel": 2, "descripcion": "Taquipnea leve", "puntaje": 0.75},
+          {"nivel": 3, "descripcion": "Esfuerzo respiratorio", "puntaje": 1.25},
+          {"nivel": 4, "descripcion": "Disnea marcada (Red Flag)", "puntaje": 2}
+        ]
+      },
+      {
+        "id": 5,
+        "nombre": "Frecuencia cardíaca",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.25},
+          {"nivel": 2, "descripcion": "Leve alteración", "puntaje": 0.75},
+          {"nivel": 3, "descripcion": "Taquicardia marcada", "puntaje": 1.25},
+          {"nivel": 4, "descripcion": "Bradicardia crítica (Red Flag)", "puntaje": 2}
+        ]
+      },
+      {
+        "id": 6,
+        "nombre": "Hidratación",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.25},
+          {"nivel": 2, "descripcion": "Deshidratación 5%", "puntaje": 0.75},
+          {"nivel": 3, "descripcion": "Deshidratación 8%", "puntaje": 1.25},
+          {"nivel": 4, "descripcion": "Deshidratación >10% (Red Flag)", "puntaje": 2}
+        ]
+      },
+      {
+        "id": 7,
+        "nombre": "Dolor",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Ausente", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Leve", "puntaje": 0.5},
+          {"nivel": 3, "descripcion": "Moderado", "puntaje": 1},
+          {"nivel": 4, "descripcion": "Severo", "puntaje": 1.5}
+        ]
+      },
+      {
+        "id": 8,
+        "nombre": "Ingesta / vómito / anorexia",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Anorexia <24h", "puntaje": 0.5},
+          {"nivel": 3, "descripcion": "Anorexia >48h", "puntaje": 1},
+          {"nivel": 4, "descripcion": "Vómito persistente", "puntaje": 1.5}
+        ]
+      },
+      {
+        "id": 9,
+        "nombre": "Eliminación / diarrea / hematuria",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Alteración leve", "puntaje": 0.5},
+          {"nivel": 3, "descripcion": "Sangrado presente", "puntaje": 1},
+          {"nivel": 4, "descripcion": "Ausencia de micción (Red Flag)", "puntaje": 1.5}
+        ]
+      },
+      {
+        "id": 10,
+        "nombre": "Duración / progresión",
+        "niveles": [
+          {"nivel": 1, "descripcion": "<24h estable", "puntaje": 0},
+          {"nivel": 2, "descripcion": "24–72h", "puntaje": 0.5},
+          {"nivel": 3, "descripcion": ">72h", "puntaje": 1},
+          {"nivel": 4, "descripcion": "Empeorando activamente", "puntaje": 1.5}
+        ]
+      }
+    ]
+  }

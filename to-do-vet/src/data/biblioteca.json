@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "prurito_scale": {
+      "0": "ninguno",
+      "1": "leve",
+      "2": "moderado",
+      "3": "intenso"
+    },
+    "edad_categorias": ["cachorro", "joven", "adulto", "senior"],
+    "inicio_categorias": ["agudo", "cronico", "recurrente"]
+  },
+  "patologias_dermatologicas": [
+    {
+      "id": "dapp",
+      "nombre": "Dermatitis Alergica a la Picadura de Pulga",
+      "prurito_nivel": 3,
+      "edad_tipica": ["cachorro", "joven", "adulto", "senior"],
+      "distribucion": ["lumbosacra", "base_cola", "muslos_posteriores"],
+      "lesiones_primarias": ["papula", "costra"],
+      "inicio": ["agudo", "recurrente"],
+      "signos_sistemicos_clave": [],
+      "pruebas_recomendadas": ["peine_pulgas", "respuesta_tratamiento"]
+    },
+    {
+      "id": "dermatitis_atopica",
+      "nombre": "Dermatitis Atopica",
+      "prurito_nivel": 3,
+      "edad_tipica": ["joven", "adulto"],
+      "distribucion": ["cara", "orejas", "axilas", "interdigital"],
+      "lesiones_primarias": ["eritema"],
+      "inicio": ["cronico", "recurrente"],
+      "signos_sistemicos_clave": ["rinitis", "conjuntivitis"],
+      "pruebas_recomendadas": ["diagnostico_exclusion", "test_intradermico", "ige_serica"]
+    },
+    {
+      "id": "alergia_alimentaria",
+      "nombre": "Alergia Alimentaria",
+      "prurito_nivel": 3,
+      "edad_tipica": ["cachorro", "joven", "adulto", "senior"],
+      "distribucion": ["cara", "orejas", "interdigital", "perianal"],
+      "lesiones_primarias": ["eritema", "papula"],
+      "inicio": ["cronico"],
+      "signos_sistemicos_clave": ["signos_gastrointestinales"],
+      "pruebas_recomendadas": ["dieta_exclusion"]
+    },
+    {
+      "id": "pioderma_superficial",
+      "nombre": "Pioderma Superficial",
+      "prurito_nivel": 2,
+      "edad_tipica": ["cachorro", "joven", "adulto", "senior"],
+      "distribucion": ["abdomen", "ingle", "tronco"],
+      "lesiones_primarias": ["pustula", "collarete_epidermico"],
+      "inicio": ["agudo"],
+      "signos_sistemicos_clave": ["linfoadenopatia_local"],
+      "pruebas_recomendadas": ["citologia"]
+    },
+    {
+      "id": "malassezia",
+      "nombre": "Dermatitis por Malassezia",
+      "prurito_nivel": 2,
+      "edad_tipica": ["adulto"],
+      "distribucion": ["pliegues", "cuello", "interdigital", "ventral"],
+      "lesiones_primarias": ["eritema", "liquenificacion", "seborrea"],
+      "inicio": ["cronico"],
+      "signos_sistemicos_clave": ["olor_rancio"],
+      "pruebas_recomendadas": ["citologia"]
+    },
+    {
+      "id": "otitis_externa",
+      "nombre": "Otitis Externa",
+      "prurito_nivel": 3,
+      "edad_tipica": ["cachorro", "joven", "adulto", "senior"],
+      "distribucion": ["conducto_auditivo"],
+      "lesiones_primarias": ["eritema", "exudado"],
+      "inicio": ["agudo", "cronico"],
+      "signos_sistemicos_clave": ["sacudidas_cabeza"],
+      "pruebas_recomendadas": ["citologia_oido", "otoscopia"]
+    },
+    {
+      "id": "sarna_sarcoptica",
+      "nombre": "Sarna Sarcoptica",
+      "prurito_nivel": 3,
+      "edad_tipica": ["cachorro", "joven", "adulto", "senior"],
+      "distribucion": ["bordes_oreja", "codos", "corvejones", "abdomen_ventral"],
+      "lesiones_primarias": ["papula", "costra"],
+      "inicio": ["agudo"],
+      "signos_sistemicos_clave": ["zoonosis_potencial"],
+      "pruebas_recomendadas": ["raspado_superficial", "serologia"]
+    },
+    {
+      "id": "sarna_demodecica",
+      "nombre": "Sarna Demodecica",
+      "prurito_nivel": 1,
+      "edad_tipica": ["cachorro", "senior"],
+      "distribucion": ["cara", "extremidades_anteriores"],
+      "lesiones_primarias": ["alopecia", "comedones", "descamacion"],
+      "inicio": ["agudo", "cronico"],
+      "signos_sistemicos_clave": ["pioderma_profunda_asociada"],
+      "pruebas_recomendadas": ["raspado_profundo", "tricograma"]
+    },
+    {
+      "id": "dermatofitosis",
+      "nombre": "Dermatofitosis",
+      "prurito_nivel": 1,
+      "edad_tipica": ["cachorro", "joven"],
+      "distribucion": ["cabeza", "orejas", "extremidades"],
+      "lesiones_primarias": ["alopecia_circular", "descamacion"],
+      "inicio": ["agudo"],
+      "signos_sistemicos_clave": ["zoonosis_potencial"],
+      "pruebas_recomendadas": ["cultivo_dtm", "lampara_wood"]
+    },
+    {
+      "id": "alopecia_endocrina",
+      "nombre": "Alopecia Endocrina",
+      "prurito_nivel": 0,
+      "edad_tipica": ["adulto", "senior"],
+      "distribucion": ["tronco_bilateral", "flancos", "cola"],
+      "lesiones_primarias": ["alopecia_no_inflamatoria", "hiperpigmentacion"],
+      "inicio": ["cronico"],
+      "signos_sistemicos_clave": ["polidipsia", "poliuria", "aumento_peso", "letargia"],
+      "pruebas_recomendadas": ["t4_libre", "acth_estimulo"]
+    }
+  ]
+}

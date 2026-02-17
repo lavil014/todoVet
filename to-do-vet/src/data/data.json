@@ -1,0 +1,224 @@
+{
+    "core_variables": [
+      {
+        "id": 1,
+        "nombre": "Estado mental",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0.5},
+          {"nivel": 2, "descripcion": "Letargia leve", "puntaje": 1.5},
+          {"nivel": 3, "descripcion": "Letargia moderada", "puntaje": 2.5},
+          {"nivel": 4, "descripcion": "Estupor / coma (Red Flag)", "puntaje": 3.5}
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Prurito",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Ausente", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Leve", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Moderado", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Intenso", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 3,
+        "nombre": "Distribución de lesiones",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Limitada / localizada", "puntaje": 1},
+          {"nivel": 2, "descripcion": "Múltiples zonas", "puntaje": 2},
+          {"nivel": 3, "descripcion": "Generalizada", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 4,
+        "nombre": "Lesión primaria",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Eritema / descamación leve", "puntaje": 0.5},
+          {"nivel": 2, "descripcion": "Pápulas / costras", "puntaje": 1.5},
+          {"nivel": 3, "descripcion": "Pústulas / liquenificación", "puntaje": 2.5}
+        ]
+      },
+      {
+        "id": 5,
+        "nombre": "Apetito",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Disminuido leve", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Disminuido moderado", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Anorexia (Red Flag)", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 6,
+        "nombre": "Hidratación",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Leve deshidratación", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Moderada deshidratación", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Severa (Red Flag)", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 7,
+        "nombre": "Temperatura",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Febrícula leve", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Fiebre moderada", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Fiebre alta / hipotermia (Red Flag)", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 8,
+        "nombre": "Signos digestivos",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Ausentes", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Leves (diarrea o vómito ocasional)", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Moderados (vómitos frecuentes / diarrea persistente)", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Severos (deshidratación, sangre en heces)", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 9,
+        "nombre": "Nivel de actividad",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normal", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Leve disminución", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Moderada disminución", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Apatía / inmovilizado (Red Flag)", "puntaje": 3}
+        ]
+      },
+      {
+        "id": 10,
+        "nombre": "Signos respiratorios",
+        "niveles": [
+          {"nivel": 1, "descripcion": "Normales", "puntaje": 0},
+          {"nivel": 2, "descripcion": "Leve disnea / tos ocasional", "puntaje": 1},
+          {"nivel": 3, "descripcion": "Moderada disnea / tos frecuente", "puntaje": 2},
+          {"nivel": 4, "descripcion": "Dificultad respiratoria severa (Red Flag)", "puntaje": 3}
+        ]
+      }
+    ],
+    "patologias_dermatologicas": [
+      {
+        "nombre": "Dermatitis Alérgica a la Picadura de Pulga (DAPP)",
+        "criterios": {
+          "prurito": ["Intenso"],
+          "distribucion": ["Zona lumbosacra", "Base de la cola", "Cara posterior de muslos"],
+          "lesion_primaria": ["Pápulas", "Costras"]
+        },
+        "edad_tipica": "Cualquier edad",
+        "inicio": "Agudo / Recurrente",
+        "signos_sistemicos": "No habitual",
+        "prueba_confirmatoria": "Test de la pulga (peine) y respuesta clínica al tratamiento"
+      },
+      {
+        "nombre": "Dermatitis Atópica",
+        "criterios": {
+          "prurito": ["Moderado a Intenso"],
+          "distribucion": ["Cara (periocular/perilabial)", "Pabellones auriculares", "Axilas", "Espacios interdigitales"],
+          "lesion_primaria": ["Eritema", "Hipotiroidismo (inicialmente)"]
+        },
+        "edad_tipica": "Joven (6 meses a 3 años)",
+        "inicio": "Crónico (frecuentemente estacional)",
+        "signos_sistemicos": "Rinitis o conjuntivitis ocasional",
+        "prueba_confirmatoria": "Pruebas intradérmicas o medición de IgE sérica"
+      },
+      {
+        "nombre": "Alergia Alimentaria (Trofoalergia)",
+        "criterios": {
+          "prurito": ["Intenso (no estacional)"],
+          "distribucion": ["Cara", "Orejas", "Patas", "Zona perianal"],
+          "lesion_primaria": ["Eritema", "Pápulas"]
+        },
+        "edad_tipica": "Cualquier edad (desde cachorros)",
+        "inicio": "Crónico",
+        "signos_sistemicos": "Signos gastrointestinales (30% de los casos)",
+        "prueba_confirmatoria": "Dieta de exclusión (proteína novel o hidrolizada) por 8-12 semanas"
+      },
+      {
+        "nombre": "Pioderma Superficial",
+        "criterios": {
+          "prurito": ["Leve a Moderado"],
+          "distribucion": ["Abdomen", "Ingle", "Tronco"],
+          "lesion_primaria": ["Pústulas", "Collaretes epidérmicos"]
+        },
+        "edad_tipica": "Cualquier edad",
+        "inicio": "Agudo",
+        "signos_sistemicos": "Linfoadenopatía local en casos extensos",
+        "prueba_confirmatoria": "Citología (neutrófilos y bacterias intracelulares)"
+      },
+      {
+        "nombre": "Dermatitis por Malassezia",
+        "criterios": {
+          "prurito": ["Moderado a Intenso"],
+          "distribucion": ["Pliegues cutáneos", "Cuello", "Espacios interdigitales", "Zona ventral"],
+          "lesion_primaria": ["Eritema", "Exudado sebáceo", "Liquenificación"]
+        },
+        "edad_tipica": "Adulto",
+        "inicio": "Crónico",
+        "signos_sistemicos": "Olor rancio característico",
+        "prueba_confirmatoria": "Citología por cinta adhesiva o impronta"
+      },
+      {
+        "nombre": "Otitis Externa",
+        "criterios": {
+          "prurito": ["Intenso", "Dolor"],
+          "distribucion": ["Conducto auditivo externo (unilateral o bilateral)"],
+          "lesion_primaria": ["Eritema", "Exudado ceroso o purulento"]
+        },
+        "edad_tipica": "Cualquier edad",
+        "inicio": "Agudo / Crónico",
+        "signos_sistemicos": "Sacudidas de cabeza, apatía por dolor",
+        "prueba_confirmatoria": "Citología del conducto y examen otoscópico"
+      },
+      {
+        "nombre": "Sarna Sarcóptica",
+        "criterios": {
+          "prurito": ["Muy Intenso"],
+          "distribucion": ["Bordes de orejas", "Codos", "Corvejones", "Abdomen ventral"],
+          "lesion_primaria": ["Pápulas", "Costras hemorrágicas"]
+        },
+        "edad_tipica": "Cualquier edad",
+        "inicio": "Agudo",
+        "signos_sistemicos": "Anorexia y pérdida de peso por estrés",
+        "prueba_confirmatoria": "Raspado cutáneo superficial o serología (IgG anti-Sarcoptes)"
+      },
+      {
+        "nombre": "Sarna Demodécica",
+        "criterios": {
+          "prurito": ["Ninguno a Leve"],
+          "distribucion": ["Cara (periocular y comisuras)", "Extremidades anteriores"],
+          "lesion_primaria": ["Alopecia", "Comedones", "Descamación"]
+        },
+        "edad_tipica": "Cachorro (localizada) / Senior (generalizada)",
+        "inicio": "Agudo / Crónico",
+        "signos_sistemicos": "Fiebre y letargia si hay pioderma profunda asociada",
+        "prueba_confirmatoria": "Raspado cutáneo profundo o tricograma"
+      },
+      {
+        "nombre": "Dermatofitosis (Tiña)",
+        "criterios": {
+          "prurito": ["Ninguno a Leve"],
+          "distribucion": ["Cabeza", "Pabellones auriculares", "Extremidades"],
+          "lesion_primaria": ["Alopecia circular", "Descamación"]
+        },
+        "edad_tipica": "Cachorro / Gato joven",
+        "inicio": "Agudo",
+        "signos_sistemicos": "Zoonosis (potencial contagio a humanos)",
+        "prueba_confirmatoria": "Cultivo fúngico (DTM) o Lámpara de Wood"
+      },
+      {
+        "nombre": "Alopecia Endocrina (Cushing/Hipotiroidismo)",
+        "criterios": {
+          "prurito": ["Ninguno"],
+          "distribucion": ["Tronco bilateral simétrico", "Flancos", "Cola"],
+          "lesion_primaria": ["Alopecia no inflamatoria", "Piel delgada o hiperpigmentada"]
+        },
+        "edad_tipica": "Adulto a Senior",
+        "inicio": "Crónico",
+        "signos_sistemicos": "Polidipsia, poliuria, cambios de peso, letargia",
+        "prueba_confirmatoria": "Pruebas hormonales específicas (T4 libre, estimulación ACTH)"
+      }
+    ]
+  }
