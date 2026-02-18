@@ -1,8 +1,14 @@
+import CoreSelector from '../components/CoreSelector';
+import DiseaseList from '../components/DiseaseList';
+import ScoreBar from '../components/ScoreBar';
+
 const Home = () => { 
     return (
-        <div>
-            <h1 style={{ color: 'red' }}>Home</h1>
-        </div>
+      <main>
+        <CoreSelector />
+        <DiseaseList />
+        <ScoreBar />  
+      </main>
     )
 }
 
