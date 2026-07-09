@@ -4,43 +4,56 @@ import { useToGrade } from '../hooks/usetoGrade';
 
 const CoreSelector = () => {
 
-  const { coreVariables, setCoreVariables, getTotal } = useToGrade();
+  const { coreVariables, setCoreVariables, getTotal, descripcion, setDescripcion } = useToGrade();
 
-  const [value, setValue] = useState(0)
+  const [valorSeleccionado, setValorSeleccionado] = useState({});
+
+  const handleChange = (e) => {
+
+    const { name , value, textContent} = e.target;
+
+    const selectedOption = e.target.options[e.target.selectedIndex].textContent;
+
+    setDescripcion(selectedOption)
 
 
-  const handleChange = (e)=>{
+    console.log(value)
 
-    const {text} = e.target;
-
-    console.log(text)
   }
+
+  
 
 
   return (
     <div>
       {
-        coreVariables.core_variables.map((variable)=>{
+        coreVariables.map((variable)=>{
 
           const{id, nombre,niveles} = variable
-
-          
 
 
           return(
             <div key={id}>
               <h3>{nombre}</h3>
 
-              <select >
+              <select name={`core_${id}`} value={valorSeleccionado[`core_${id}`] ?? ''} onChange={handleChange} >
                 
-                {niveles.map((coreNivel)=>{
+               
+              
+                <option value="">{descripcion}</option>
 
-                  const {descripcion, nivel, puntaje} = coreNivel
+                {
+                  niveles.map((nivel, index)=>{
 
-                  return(
-                    <option value={puntaje}>{descripcion}</option>  
-                  )
-                })}
+                    const {puntaje, descripcion} = nivel
+
+                    return(
+                      <option key={index} value={puntaje}>{descripcion}</option>
+                    )
+                  })
+                }
+
+               
 
               </select>
             

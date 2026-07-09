@@ -1,11 +1,13 @@
 import Home from './pages/home'
+import EvaluacionClinica from './pages/EvaluacionClinica'
+import Dianostico from './components/Dianostico'
 
 function App() {
  
   
   return (
     <main>
-      <Home />
+      <Dianostico/>
     </main>
     
   )

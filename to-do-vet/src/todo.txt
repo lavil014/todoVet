@@ -1,0 +1,9 @@
+Sacar la data en diagnosis y guardarla como estado PENDING 
+
+Necesito capturar la sintomatologia y agregarla a mi estado , hasta aca me quede hoy COMPLETED
+
+Por ahora mi sintomatologia es un String como puedo pasar un string a un arreglo COMPLETED
+
+Necesito usar mi estado para poder filtrar las enfermedades en base a los sintomas collectados y que me de posibles diagnosticos PENDING
+
+Me da los resultados de le enfermedad y me da mas de un resultado , lo cual es bueno , necesito que en pruebas , tratamiento me de una sola listo y no varia , osea que no me de varios arreglos que solo me de uno PENDING
