@@ -14,6 +14,48 @@ nav{
   padding:  0.4rem 1rem;
 }
 
+.drop-down .side-bar{
+  position: absolute;
+  height: 100dvh;
+  width: 60%;
+  margin-left: -3rem;
+  margin-top: 2.3rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: white;
+  padding: 1rem;
+  color: var(--primary);
+}
+
+.drop-down .side-bar .menu-panel{
+  list-style: none;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.drop-down .side-bar .menu-panel li{
+  padding: 0 0.5rem;
+}
+
+.drop-down .side-bar .menu-panel .menu-items{
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.drop-down .side-bar .menu-panel .menu-items:hover{
+  color: var(--border);
+}
+
+
+.drop-down .side-bar .menu-panel li:hover{
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  color: var(--border);
+}
+
 .drop-down i{
   cursor: pointer;
   border: none;
@@ -52,7 +94,7 @@ nav{
 .add-menu-drop-down{
   display: none;
   flex-direction: column;
-  margin-top: 5.9rem;
+  margin-top: 6.9rem;
   position: absolute;
 }
 

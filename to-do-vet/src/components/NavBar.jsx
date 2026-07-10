@@ -7,6 +7,17 @@ const NavBar = () => {
 
   const [displayDropDownMenu, setDisplayDropDownMenu] = useState(false)
 
+  const [displaySideBar, setDisplaySideBar] = useState(false)
+
+
+  const toDisplaySideBar = ()=>{
+    if(displaySideBar === false){
+      setDisplaySideBar(true)
+    } else if(displaySideBar === true){
+      setDisplaySideBar(false)
+    }
+  }
+
   const toDisplayMenu = ()=>{
     
     if(displayDropDownMenu === false){
@@ -20,15 +31,27 @@ const NavBar = () => {
   return (
 
     <nav>
-      <div className="drop-down">    
-        <i class="fa-solid fa-bars"></i>
+      <div className="drop-down">  
+
+        <i class="fa-solid fa-bars" onClick={toDisplaySideBar}></i>
+        <aside className="side-bar" style={{display: displaySideBar === true ?'inline' : 'none' }}>
+          <p>TodoVet app</p>
+          <ul className="menu-panel">
+            <p>MENU</p>
+            <li><NavLink className="menu-items">Panel</NavLink></li>
+            <li><NavLink className="menu-items">Panel</NavLink></li>
+            <li><NavLink className="menu-items">Panel</NavLink></li>
+            <li><NavLink className="menu-items">Panel</NavLink></li>
+          </ul>
+        </aside>
       </div>
       <div className="icons-container">
         <div className="add-menu">
           <i class="fa-solid fa-plus" onClick={toDisplayMenu}></i>
           <div className="add-menu-drop-down" style={{display: displayDropDownMenu === true ?'flex' : 'none' }}>
-            <NavLink className="links">Nuevo paciente</NavLink>
-            <NavLink className="links">Nueva tarea</NavLink>
+            <NavLink className="links">Consulta</NavLink>
+            <NavLink className="links">Venta</NavLink>
+            <NavLink className="links">Evento</NavLink>
           </div>
         </div>
         
