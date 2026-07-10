@@ -1,0 +1,72 @@
+
+:root{
+  --primary: oklch(0.55 0.09 185);
+  --border: oklch(0.91 0.012 150);
+}
+
+
+
+nav{
+  border-bottom: solid oklch(0.91 0.012 150) 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  0.4rem 1rem;
+}
+
+.drop-down i{
+  cursor: pointer;
+  border: none;
+}
+
+.icons-container{
+  display: flex;
+  gap: 1rem;
+}
+
+.fa-solid , .fa-regular{
+  border: solid oklch(0.91 0.012 150) 1px;
+  color: var(--primary);
+  padding: 0.3rem 0.5rem;
+  border-radius: 42%;
+}
+
+.add-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-plus{
+  color: white;
+  background-color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding: 0.3rem 0.5rem;
+  border-radius: 55%;
+  cursor: pointer;
+}
+
+
+.add-menu-drop-down{
+  display: none;
+  flex-direction: column;
+  margin-top: 5.9rem;
+  position: absolute;
+}
+
+.add-menu-drop-down .links{
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.add-menu-drop-down .links:hover{
+  background-color: var(--primary);
+  color: var(--border);
+  border-radius: 0.5rem;
+}

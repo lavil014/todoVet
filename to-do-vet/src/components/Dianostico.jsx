@@ -1,9 +1,8 @@
 import { useState } from 'react'
 
-
 import enfermedades from '../data/enfermedades.json'
 
-const Dianostico = () => {
+const Diagnostico = () => {
 
   const [patologias, setPatologias] = useState(enfermedades.patologias_dermatologicas_mascotas)
 
@@ -24,20 +23,11 @@ const Dianostico = () => {
 
   const filtroparaBusqueda = new Set(sintomatologia);
 
-  /* 
-  const possiblesDiagnosticos = patologias.sintomas.filter((patologia)=>{
-
-    return filtroparaBusqueda.has(patologia.sintomas);
-  })
-
-  */
-
   const submitInformacion = (e)=>{
 
     e.preventDefault()
 
   }
-
 
   const possiblesDiagnosticos = patologias.filter(patologia => {
 
@@ -53,42 +43,63 @@ const Dianostico = () => {
 
   })
 
-  console.log(possiblesDiagnosticos)
 
 
   return (
     <div>
 
-    <h3>Ingrese la sintomatologia del paciente</h3>
+      <h3>Nuevo paciente</h3>
 
       <form typeof='submit' onSubmit={submitInformacion}>
-        <textarea type='text' rows={12} cols={40} onChange={collectarSintomatologia}></textarea>
+        <textarea type='text' onChange={collectarSintomatologia} onClick={(e)=>{
+          e.target.rows = 10
+          e.target.cols = 40
+        }}></textarea>
 
         <button type='submit'>Enviar</button>
       </form>
 
       <div>
         
-        <div>
+        <section>
+
+          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Diagnosticos a considerar</h4>
           {
             possiblesDiagnosticos.map((patologia)=>{
 
-              const {enfermedad, sintomas, pruebas, tratamiento, medicamento} = patologia;
+              const {enfermedad} = patologia;
 
-              return(
-                <div>
-                  <h4>Pruebas a considerar</h4>
-                  <p>{pruebas}</p>
-                </div>
-
+              return(    
+                  <div >
+                    <p>{enfermedad}</p>
+                  </div>
+                                                         
               )
             })
           }
-        </div>
+        </section>
+
+        <section>
+          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Possibles diagnosticos</h4>
+          <div>
+            {
+              possiblesDiagnosticos.map((patologia)=>{
+
+                  const {pruebas} = patologia;
+
+                return(
+                  <div>
+                    <p>{pruebas}</p>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </section>
 
       </div>
     </div>
   )
 }
 
-export default Dianostico
+export default Diagnostico

@@ -1,14 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+
 import Home from './pages/home'
-import EvaluacionClinica from './pages/EvaluacionClinica'
-import Dianostico from './components/Dianostico'
+
+import EvaluacionClinica from './components/EvaluacionClinica'
+import Diagnostico from './components/Dianostico'
+import NavBar from './components/NavBar'
+
+import './stylesheets/styles.css'
 
 function App() {
  
+
   
   return (
-    <main>
-      <Dianostico/>
-    </main>
+    <BrowserRouter>
+      <NavBar/>
+    </BrowserRouter>
     
   )
 }

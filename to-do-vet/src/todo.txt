@@ -6,4 +6,4 @@ Por ahora mi sintomatologia es un String como puedo pasar un string a un arreglo
 
 Necesito usar mi estado para poder filtrar las enfermedades en base a los sintomas collectados y que me de posibles diagnosticos PENDING
 
-Me da los resultados de le enfermedad y me da mas de un resultado , lo cual es bueno , necesito que en pruebas , tratamiento me de una sola listo y no varia , osea que no me de varios arreglos que solo me de uno PENDING
+Me da los resultados de le enfermedad y me da mas de un resultado , lo cual es bueno , necesito que en pruebas , tratamiento me de una sola listo y no varia , osea que no me de varios arreglos que solo me de uno COMPLETED
