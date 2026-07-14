@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import EvaluacionClinica from './EvaluacionClinica'  
+
 
 import enfermedades from '../data/enfermedades.json'
 
@@ -48,6 +50,8 @@ const Diagnostico = () => {
   return (
     <div>
 
+
+      <EvaluacionClinica/>
       <h3>Nuevo paciente</h3>
 
       <form typeof='submit' onSubmit={submitInformacion}>

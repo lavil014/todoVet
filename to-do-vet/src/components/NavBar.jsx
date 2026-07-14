@@ -49,7 +49,7 @@ const NavBar = () => {
         <div className="add-menu">
           <i class="fa-solid fa-plus" onClick={toDisplayMenu}></i>
           <div className="add-menu-drop-down" style={{display: displayDropDownMenu === true ?'flex' : 'none' }}>
-            <NavLink className="links">Consulta</NavLink>
+            <NavLink to='/consulta' className="links">Consulta</NavLink>
             <NavLink className="links">Venta</NavLink>
             <NavLink className="links">Evento</NavLink>
           </div>

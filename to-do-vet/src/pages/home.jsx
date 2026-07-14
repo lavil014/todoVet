@@ -5,9 +5,7 @@ import ScoreBar from '../components/ScoreBar';
 const Home = () => { 
     return (
       <main>
-        <CoreSelector />
-        <DiseaseList />
-        <ScoreBar />  
+        <h1>Bienvenid@ a todoVet !</h1>
       </main>
     )
 }
