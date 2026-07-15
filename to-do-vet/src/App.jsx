@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Home from './pages/home'
 
-import EvaluacionClinica from './components/EvaluacionClinica'
-import Diagnostico from './components/Diagnostico'
 import NavBar from './components/NavBar'
+import Patient from './pages/Patient'
+
+
 
 import './stylesheets/styles.css'
 
@@ -18,7 +19,7 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/consulta' element={<Diagnostico/>}/>
+        <Route path='/consulta' element={<Patient/>}/>
       </Routes>
       
     </BrowserRouter>

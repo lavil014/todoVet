@@ -1,0 +1,74 @@
+:root{
+  --primary: oklch(0.55 0.09 185);
+  --muted: oklch(0.96 0.008 120);
+}
+
+
+
+.diagnostico-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.diagnostico-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.diagnostico-container form textarea{
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.3rem;
+  border: solid 1px var(--primary);
+  border-radius: 0.2rem;
+}
+
+
+.diagnostico-container form .btn-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagnostico-container form button{
+  padding: 0.5rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.2rem;
+  color: var(--muted);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.diagnostico-container form .cancelar-btn{
+  background-color: var(--muted);
+  color: var(--primary);
+}
+
+h4{
+  color: var(--primary);
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+.possibles-diagnosticos-container-no-results{
+  display: none;
+}
+
+.possibles-diagnosticos-container, .possibles-pruebas-container{
+  border: solid 1px var(--primary);
+  border-radius: 0.2rem;
+  font-size: 0.45rem;
+  padding: 0.4rem ;
+  margin-top: 1rem;
+}
+

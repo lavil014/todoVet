@@ -24,7 +24,20 @@ const EvaluacionClinica = () => {
 
   }
 
-    
+  const gradients = {
+  10: "linear-gradient(to right, #4ADE80, #16A34A)",
+  9: "linear-gradient(to right, #6EE7B7, #22C55E)",
+  8: "linear-gradient(to right, #86EFAC, #65A30D)",
+  7: "linear-gradient(to right, #D9F99D, #84CC16)",
+  6: "linear-gradient(to right, #FDE047, #EAB308)",
+  5: "linear-gradient(to right, #FACC15, #F59E0B)",
+  4: "linear-gradient(to right, #FDBA74, #EA580C)",
+  3: "linear-gradient(to right, #FB923C, #DC2626)",
+  2: "linear-gradient(to right, #F87171, #B91C1C)",
+  1: "linear-gradient(to right, #EF4444, #7F1D1D)",
+};
+
+
   return (
 
     <main>
@@ -33,7 +46,7 @@ const EvaluacionClinica = () => {
       
         <h3>Evaluacion clinica</h3>
           <div className='evaluacionclinica-container'>
-            <progress className='estado-clinico' value={estadoClinico} max={10} min={0}></progress>
+            <div className="estado-clinico" style={{background: `${gradients[estadoClinico]}`}}></div>
             <span>{estadoClinico} de 10</span>
           </div>
         

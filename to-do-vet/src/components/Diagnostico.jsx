@@ -4,6 +4,8 @@ import EvaluacionClinica from './EvaluacionClinica'
 
 import enfermedades from '../data/enfermedades.json'
 
+import '../stylesheets/diagnostico.css'
+
 const Diagnostico = () => {
 
   const [patologias, setPatologias] = useState(enfermedades.patologias_dermatologicas_mascotas)
@@ -21,6 +23,8 @@ const Diagnostico = () => {
     .filter(item => item !== "");
 
     setSintomatologia(arreglodeSintomas)  
+
+    console.log(arreglodeSintomas.length)
   }
 
   const filtroparaBusqueda = new Set(sintomatologia);
@@ -48,19 +52,19 @@ const Diagnostico = () => {
 
 
   return (
-    <div>
+    <main className='diagnostico-container'>
 
-
-      <EvaluacionClinica/>
-      <h3>Nuevo paciente</h3>
+      <h3>Sintomatologia</h3>
 
       <form typeof='submit' onSubmit={submitInformacion}>
-        <textarea type='text' onChange={collectarSintomatologia} onClick={(e)=>{
+        <textarea type='text' onChange={collectarSintomatologia} 
+        cols="40"
+        onClick={(e)=>{
           e.target.rows = 10
-          e.target.cols = 40
         }}></textarea>
-
-        <button type='submit'>Enviar</button>
+      <div className='btn-container'>
+        <button type='submit' style={{display:sintomatologia.length > 0 ? 'flex': 'none'}}>Guardar</button><button className='cancelar-btn' style={{display:sintomatologia.length > 0 ? 'flex': 'none'}}>Cancelar</button>
+      </div>
       </form>
 
       <div>
@@ -68,6 +72,10 @@ const Diagnostico = () => {
         <section>
 
           <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Diagnosticos a considerar</h4>
+
+          <div className="possibles-diagnosticos-container">
+
+          
           {
             possiblesDiagnosticos.map((patologia)=>{
 
@@ -81,11 +89,16 @@ const Diagnostico = () => {
               )
             })
           }
+
+          </div>
         </section>
 
-        <section>
-          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Possibles diagnosticos</h4>
-          <div>
+        <section >
+          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Possibles pruebas diagnosticas</h4>
+          <div className="possibles-diagnosticos-container"> 
+          
+          /* Necesito actualiza el className para que no me aparezca cuando no hayan sintomas */
+            
             {
               possiblesDiagnosticos.map((patologia)=>{
 
@@ -102,7 +115,9 @@ const Diagnostico = () => {
         </section>
 
       </div>
-    </div>
+
+      
+    </main>
   )
 }
 
