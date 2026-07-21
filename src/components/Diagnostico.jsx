@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import EvaluacionClinica from './EvaluacionClinica'  
 
@@ -71,9 +72,9 @@ const Diagnostico = () => {
         
         <section>
 
-          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Diagnosticos a considerar</h4>
+          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Possibles diagnosticos</h4>
 
-          <div className="possibles-diagnosticos-container">
+          <div className="possibles-diagnosticos-container" style={{display: possiblesDiagnosticos.length > 0 ? 'block' : 'none'}}>
 
           
           {
@@ -94,10 +95,9 @@ const Diagnostico = () => {
         </section>
 
         <section >
-          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Possibles pruebas diagnosticas</h4>
-          <div className="possibles-diagnosticos-container"> 
+          <h4 style={{display: possiblesDiagnosticos.length > 0 ? 'flex' : 'none'}}>Pruebas diagnosticas a considerar</h4>
+          <div className="possibles-diagnosticos-container" style={{display: possiblesDiagnosticos.length > 0 ? 'block' : 'none'}}> 
           
-          /* Necesito actualiza el className para que no me aparezca cuando no hayan sintomas */
             
             {
               possiblesDiagnosticos.map((patologia)=>{
