@@ -3,13 +3,13 @@ import { useState } from 'react'
 import EvaluacionClinica from './EvaluacionClinica'  
 
 
-import enfermedades from '../data/enfermedades.json'
+import enfermedades from '../data/datadeenfermedades.json'
 
 import '../stylesheets/diagnostico.css'
 
 const Diagnostico = () => {
 
-  const [patologias, setPatologias] = useState(enfermedades.patologias_dermatologicas_mascotas)
+  const [patologias, setPatologias] = useState(enfermedades.patologias_mascotas)
 
   const [sintomatologia, setSintomatologia ] = useState([])
 
@@ -25,7 +25,6 @@ const Diagnostico = () => {
 
     setSintomatologia(arreglodeSintomas)  
 
-    console.log(arreglodeSintomas.length)
   }
 
   const filtroparaBusqueda = new Set(sintomatologia);

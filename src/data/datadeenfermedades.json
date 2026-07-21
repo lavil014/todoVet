@@ -1,0 +1,875 @@
+{
+  "patologias_mascotas": [
+    {
+      "id": "dapp",
+      "enfermedad": "dermatitis alergica a la picadura de pulga (dapp)",
+      "nombre_completo": "dermatitis alergica a la picadura de pulga",
+      "sintomas": [
+        "prurito intenso",
+        "rascado y lamido compulsivo",
+        "perdida de pelo (alopecia)",
+        "dermatitis militar con pequenas costras"
+      ],
+      "pruebas": [
+        "presencia visual de pulgas o sus heces con peine fino",
+        "prueba del papel de filtro humedo",
+        "respuesta clinica al tratamiento"
+      ],
+      "tratamiento": [
+        "control estricto de pulgas en la mascota y en el ambiente",
+        "manejo del picor",
+        "reparacion de la barrera cutanea"
+      ],
+      "medicamentos": [
+        "antiparasitarios externos (fluralaner, afoxolaner, sarolaner)",
+        "corticoides a dosis bajas (prednisolona) para el prurito agudo",
+        "oclacitinib para el control del picor"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "leve (asociado a la incomodidad por prurito)",
+        "ingesta_vomito_anorexia": "normal",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "24-72h o mayor a 72h (cronico repetitivo)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 8.0,
+        "evaluacion": [
+          "condicion general: muy bueno.",
+          "el paciente mantiene sus funciones organicas e hidratacion perfectas.",
+          "experimenta un alto nivel de estres, ansiedad e inquietud debido al prurito agudo y punzante."
+        ]
+      }
+    },
+    {
+      "id": "dermatitis_atopica",
+      "enfermedad": "dermatitis atopica",
+      "nombre_completo": "dermatitis atopica canina / felina",
+      "sintomas": [
+        "prurito moderado a intenso cronico",
+        "eritema (piel roja)",
+        "lamido constante de patas",
+        "frotamiento de cara",
+        "otitis bilaterales recurrentes"
+      ],
+      "pruebas": [
+        "diagnostico por exclusion de otras causas",
+        "pruebas de alergia intradermica",
+        "pruebas serologicas de ige para identificar alergenos ambientales"
+      ],
+      "tratamiento": [
+        "manejo multimodal de por vida",
+        "control de alergenos ambientales",
+        "banos terapeuticos recurrentes",
+        "suplementacion con acidos grasos esenciales",
+        "terapia inmunomoduladora"
+      ],
+      "medicamentos": [
+        "oclacitinib (apoquel)",
+        "lokivetmab (cytopoint - anticuerpo monoclonal solo para perros)",
+        "ciclosporina",
+        "champus con clorhexidina y fitoesfingosina"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario",
+        "sistema inmunitario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "leve",
+        "ingesta_vomito_anorexia": "normal",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "mayor a 72h (altamente cronico)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 8.5,
+        "evaluacion": [
+          "condicion general: muy bueno.",
+          "el animal esta sistemicamente sano y activo.",
+          "pierde puntos de la condicion optica unicamente por la inflamacion cutanea perenne y la molestia del rascado recurrentes."
+        ]
+      }
+    },
+    {
+      "id": "alergia_alimentaria",
+      "enfermedad": "alergia alimentaria",
+      "nombre_completo": "reaccion adversa al alimento (trofoalergia)",
+      "sintomas": [
+        "prurito intenso no estacional",
+        "prurito frecuente en cara, patas y zona perianal",
+        "otitis recurrentes",
+        "vomitos intermitentes (ocasional)",
+        "diarreas o aumento de deposiciones (ocasional)"
+      ],
+      "pruebas": [
+        "dieta de eliminacion estricta (proteina novel o hidrolizada) durante 8 a 12 semanas",
+        "prueba de provocacion posterior"
+      ],
+      "tratamiento": [
+        "cambio permanente a una dieta hipoalergenica estricta",
+        "uso de dieta casera balanceada o comercial hidrolizada/novel",
+        "control riguroso de fuentes ocultas de proteina (premios, juguetes masticables)"
+      ],
+      "medicamentos": [
+        "oclacitinib a corto plazo para aliviar el picor inicial",
+        "corticoides a corto plazo durante las primeras semanas de la dieta de eliminacion"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario",
+        "sistema digestivo"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal (o deshidratacion 5 por ciento si la diarrea es concurrente)",
+        "dolor": "leve",
+        "ingesta_vomito_anorexia": "anorexia menor a 24h (asociada a malestar digestivo ocasional)",
+        "eliminacion_diarrea_hematuria": "alteracion leve (diarrea intermitente en el 30 por ciento de los casos)",
+        "duracion_progresion": "mayor a 72h"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 7.5,
+        "evaluacion": [
+          "condicion general: regular.",
+          "se ve afectada la condicion general debido a alteraciones gastrointestinales concurrentes.",
+          "las diarreas o vomitos causan incomodidad abdominal y un riesgo leve de deshidratacion."
+        ]
+      }
+    },
+    {
+      "id": "pioderma_superficial",
+      "enfermedad": "pioderma superficial",
+      "nombre_completo": "infeccion bacteriana superficial",
+      "sintomas": [
+        "prurito leve a moderado",
+        "pustulas (granitos con pus)",
+        "collaretes epidermicos (lesiones circulares descamativas)",
+        "costras cutaneas",
+        "olor fuerte caracteristico a 'perro sucio'"
+      ],
+      "pruebas": [
+        "citologia por impronta cutanea (observacion de neutrofilos con bacterias fagocitadas)",
+        "cultivo bacteriano con antibiograma en caso de sospecha de resistencia"
+      ],
+      "tratamiento": [
+        "terapia topica antiseptica frecuente (banos)",
+        "antibioticoterapia sistemica si la lesion es extensa",
+        "diagnostico y control de la causa primaria subyacente (alergias, ectoparasitos)"
+      ],
+      "medicamentos": [
+        "cefalexina",
+        "amoxicilina con acido clavulanico",
+        "marbofloxacino",
+        "champus a base de clorhexidina al 2-4 por ciento o peroxido de benzilo"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal (fiebre leve solo si evoluciona a pioderma profunda)",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "leve a moderado (segun la extension de las costras)",
+        "ingesta_vomito_anorexia": "normal",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "24-72h o mayor a 72h"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 8.5,
+        "evaluacion": [
+          "condicion general: muy bueno.",
+          "pese a las lesiones exudativas, costras e incomodidad local, el paciente se mantiene estable.",
+          "no existe repercusion interna ni metabolica aguda sobre el organismo de la mascota."
+        ]
+      }
+    },
+    {
+      "id": "dermatitis_malassezia",
+      "enfermedad": "dermatitis por malassezia",
+      "nombre_completo": "infeccion por malassezia pachydermatis",
+      "sintomas": [
+        "prurito intenso",
+        "eritema severo",
+        "exudado sebaceo (piel grasa)",
+        "descamacion cutanea",
+        "liquenificacion (piel engrosada y ennegrecida)",
+        "olor rancio caracteristico"
+      ],
+      "pruebas": [
+        "citologia cutanea mediante el uso de cinta adhesiva o impronta",
+        "observacion microscopica de morfologia en 'huella de zapato' o 'cacahuate'"
+      ],
+      "tratamiento": [
+        "banos antimicoticos repetidos",
+        "antifungicos por via oral en casos severos o generalizados",
+        "control de la patologia base (alergias o conformacion anatomica de pliegues excesivos)"
+      ],
+      "medicamentos": [
+        "ketoconazol por via oral",
+        "itraconazol por via oral",
+        "fluconazol por via oral",
+        "champus o lociones con miconazol, clorhexidina o ketoconazol"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "leve",
+        "ingesta_vomito_anorexia": "normal",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "mayor a 72h (proceso netamente cronico)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 8.0,
+        "evaluacion": [
+          "condicion general: muy bueno.",
+          "no compromete constantes vitales de forma directa.",
+          "reduce el confort del paciente debido a la severa alteracion cronica de la barrera epidermica."
+        ]
+      }
+    },
+    {
+      "id": "otitis_externa",
+      "enfermedad": "otitis externa",
+      "nombre_completo": "inflamacion del conducto auditivo externo",
+      "sintomas": [
+        "prurito y dolor otico intenso",
+        "sacudidas y ladeo de cabeza",
+        "frotamiento de orejas contra objetos",
+        "enrojecimiento del pabellon auricular",
+        "secreciones abundantes y fetidas"
+      ],
+      "pruebas": [
+        "examen otoscopico directo para evaluar integridad del timpano",
+        "citologia del conducto auditivo (bacterias, levaduras u otodectes)",
+        "cultivo y antibiograma en casos de otitis cronicas o recurrentes"
+      ],
+      "tratamiento": [
+        "limpieza y lavado profundo del conducto auditivo externo",
+        "uso de soluciones cerumenoliticas",
+        "aplicacion de gotas oticas medicinales",
+        "tratamiento simultaneo de la causa alergica o parasitaria base"
+      ],
+      "medicamentos": [
+        "limpiadores oticos comerciales",
+        "suspensiones oticas topicas polivalentes (gentamicina/enrofloxacino + posaconazol/clotrimazol + dexametasona)"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario",
+        "organos de los sentidos (oido)"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "letargia leve (asociada al dolor o molestia constante)",
+        "perfusion": "normal",
+        "temperatura": "normal (o fiebre leve si hay una fuerte infeccion bacteriana)",
+        "respiracion": "normal (taquipnea leve si el dolor agudo es muy fuerte)",
+        "frecuencia_cardiaca": "leve alteracion (por estres/dolor)",
+        "hidratacion": "normal",
+        "dolor": "moderado a severo",
+        "ingesta_vomito_anorexia": "anorexia menor a 24h (el dolor al masticar por inflamacion del conducto puede inhibirlos)",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "24-72h o empeorando activamente"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 6.5,
+        "evaluacion": [
+          "condicion general: deficiente / cuidado.",
+          "el estado decae debido al dolor agudo y punzante en la zona de la cabeza.",
+          "puede manifestar letargia por malestar, taquicardia por estres e inapetencia temporal ante la molestia mecanica de masticar."
+        ]
+      }
+    },
+    {
+      "id": "sarna_sarcoptica",
+      "enfermedad": "sarna sarcoptica",
+      "nombre_completo": "escabiosis canina",
+      "sintomas": [
+        "prurito extremadamente intenso y desesperante",
+        "presencia de papulas",
+        "costras hemorragicas por autorrascado",
+        "alopecia marcada en bordes de orejas, codos y abdomen"
+      ],
+      "pruebas": [
+        "raspados cutaneos superficiales multiples",
+        "evaluacion del reflejo pinnal-podal (positivo al rascar la oreja)",
+        "pruebas serologicas elisa (igg anti-sarcoptes)"
+      ],
+      "tratamiento": [
+        "tratamiento estricto con acaricidas sistemicos o topicos",
+        "aislamiento inmediato de otros caninos por alto riesgo de contagio",
+        "desinfeccion rigurosa de camas, cobijas y entornos compartidos"
+      ],
+      "medicamentos": [
+        "isoxazolinas por via oral (afoxolaner, sarolaner, fluralaner)",
+        "selamectina en spot-on (pipeta)",
+        "moxidectina en spot-on (pipeta)",
+        "corticoides a corto plazo para mitigar el picor inicial desesperante"
+      ],
+      "especie": [
+        "principalmente caninos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "letargia leve o moderada (por extenuacion fisica e insomnio por prurito)",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "taquipnea leve (provocada por el estres del rascado continuo)",
+        "frecuencia_cardiaca": "leve alteracion",
+        "hidratacion": "normal",
+        "dolor": "moderado (debido a las excoriaciones y heridas autoinducidas)",
+        "ingesta_vomito_anorexia": "anorexia menor a 24h o anorexia mayor a 48h (el animal prefiere rascarse que comer)",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "empeorando activamente"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 6.0,
+        "evaluacion": [
+          "condicion general: deficiente.",
+          "el paciente sufre de extenuacion fisica e insomnio severo por el prurito constante.",
+          "deja de alimentarse de manera regular debido a la distraccion del rascado.",
+          "las multiples heridas abiertas por rascado merman significativamente su bienestar general."
+        ]
+      }
+    },
+    {
+      "id": "sarna_demodectica",
+      "enfermedad": "sarna demodectica",
+      "nombre_completo": "demodicosis (sarna roja)",
+      "sintomas": [
+        "alopecia focal o generalizada (parches sin pelo)",
+        "comedones (puntos negros)",
+        "descamacion y eritema",
+        "pioderma profunda secundaria con drenaje purulento (casos severos)"
+      ],
+      "pruebas": [
+        "raspado cutaneo profundo (hasta provocar sangrado capilar)",
+        "tricograma (extraccion de pelos para observar acaros en el foliculo bajo microscopio)"
+      ],
+      "tratamiento": [
+        "control de los acaros foliculares con ectoparasiticidas modernos",
+        "evitar la reproduccion/cria del paciente (enfermedad con base hereditaria)",
+        "tratamiento energico de infecciones bacterianas secundarias",
+        "soporte y modulacion del sistema inmune"
+      ],
+      "medicamentos": [
+        "isoxazolinas orales (fluralaner, sarolaner, lotilaner)",
+        "ivermectina oral (uso en protocolos antiguos)",
+        "antibioticoterapia sistemica prolongada en caso de pioderma profunda"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario",
+        "sistema inmunitario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal (o letargia moderada si el cuadro es juvenil/generalizado con pioderma profunda)",
+        "perfusion": "normal (o mucosas palidas en sepsis secundaria por infeccion severa)",
+        "temperatura": "normal (o fiebre alta si hay pioderma profunda/septicemia generalizada)",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal (o taquicardia marcada si hay shock septico)",
+        "hidratacion": "normal (o deshidratacion 8 por ciento si el estado general se deteriora)",
+        "dolor": "ausente a leve (moderado si se infecta profundamente)",
+        "ingesta_vomito_anorexia": "normal (anorexia mayor a 48h si esta sistemicamente comprometido)",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "mayor a 72h o empeorando activamente"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 4.5,
+        "evaluacion": [
+          "condicion general: cuidado / alerta critica (en variante generalizada profunda).",
+          "si evoluciona a pioderma profunda, la perdida de la barrera cutanea es masiva.",
+          "puede generar postracion, anorexia prolongada, fiebre alta e infecciones sistemicas letales con riesgo latente de shock septico."
+        ]
+      }
+    },
+    {
+      "id": "tina_dermatofitosis",
+      "enfermedad": "dermatofitosis (tina)",
+      "nombre_completo": "infeccion fungica por dermatofitos",
+      "sintomas": [
+        "areas circulares de alopecia (calvas)",
+        "descamacion localizada con bordes eritematosos",
+        "pelos rotos y fragilidad capilar extrema",
+        "prurito nulo o muy leve"
+      ],
+      "pruebas": [
+        "examen directo con lampara de wood (fluorescencia verde manzana)",
+        "tricograma de pelos perifericos a la lesion",
+        "confirmacion definitiva mediante cultivo fungico (dtm) o pcr"
+      ],
+      "tratamiento": [
+        "terapia topica local o generalizada",
+        "antifungicos sistemicos en casos multifocales o extensos",
+        "recorte de pelo en zonas afectadas",
+        "desinfeccion agresiva del hogar y fomites por alto potencial zoonosico"
+      ],
+      "medicamentos": [
+        "itraconazol por via oral",
+        "terbinafina por via oral",
+        "enilconazol topico",
+        "champus combinados de clorhexidina con miconazol"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema tegumentario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "ausente",
+        "ingesta_vomito_anorexia": "normal",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "mayor a 72h"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 9.5,
+        "evaluacion": [
+          "condicion general: excelente / optimo.",
+          "es un proceso cutaneo estrictamente superficial y localizado.",
+          "el animal mantiene intacto su nivel de energia, apetito y constantes vitales; el impacto es puramente estetico."
+        ]
+      }
+    },
+    {
+      "id": "alopecia_endocrina",
+      "enfermedad": "alopecia endocrina",
+      "nombre_completo": "dermatosis endocrina (hipotiroidismo / sindrome de cushing)",
+      "sintomas": [
+        "alopecia simetrica bilateral no inflamatoria",
+        "alopecia que respeta cabeza y extremidades",
+        "piel delgada o zonas de hiperpigmentacion",
+        "cola con aspecto 'de rata'",
+        "ausencia total de prurito dermatologico"
+      ],
+      "pruebas": [
+        "analiticas sanguineas e histopatologia general",
+        "medicion de t4 total, t4 libre y tsh (para el diagnostico de tiroides)",
+        "test de estimulacion con acth o supresion con dexametasona (para sindrome de cushing)"
+      ],
+      "tratamiento": [
+        "tratamiento medico especifico para corregir la disfuncion glandular de base",
+        "manejo de soporte para la regeneracion del pelaje (puede tardar meses)"
+      ],
+      "medicamentos": [
+        "levotiroxina sodica (para tratamiento de hipotiroidismo)",
+        "trilostano (para manejo de hiperadrenocorticismo/cushing)",
+        "mitotano (alternativa para cushing)"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema endocrino",
+        "sistema tegumentario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "letargia leve o moderada (frecuente en hipotiroidismo)",
+        "perfusion": "normal",
+        "temperatura": "normal (con tendencia a la hipotermia leve por metabolismo bajo)",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "leve alteracion (bradicardia ligera en hipotiroidismo)",
+        "hidratacion": "normal (aunque cursan con poliuria/polidipsia en cushing)",
+        "dolor": "ausente",
+        "ingesta_vomito_anorexia": "normal (frecuente polifagia/aumento de ingesta en cushing)",
+        "eliminacion_diarrea_hematuria": "alteracion leve (por poliuria/aumento de miccion en cushing)",
+        "duracion_progresion": "mayor a 72h (cronico de meses de evolucion)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 7.0,
+        "evaluacion": [
+          "condicion general: regular.",
+          "la piel no esta inflamada ni duele, pero la condicion general decae por el problema metabolico mayor.",
+          "la disfuncion glandular debilita los musculos, deprime el animo (letargia) y desajusta los patrones organicos de alimentacion y excrecion."
+        ]
+      }
+    },
+    {
+      "id": "gastroenteritis_aguda",
+      "enfermedad": "gastroenteritis aguda",
+      "nombre_completo": "gastroenteritis agudizada inespecifica",
+      "sintomas": [
+        "vomitos repentinos e intempestivos",
+        "diarrea liquida o blanda",
+        "inapetencia y anorexia",
+        "dolor o malestar abdominal al palpar",
+        "letargia y decaimiento"
+      ],
+      "pruebas": [
+        "coprologico directo y flotacion (para descartar parasitos)",
+        "ecografia abdominal",
+        "hemograma completo para evaluar inflamacion o hemoconcentracion"
+      ],
+      "tratamiento": [
+        "reposo digestivo e hidratacion parenteral u oral gradual",
+        "dieta blanda de alta digestibilidad",
+        "proteccion de la mucosa gastrica"
+      ],
+      "medicamentos": [
+        "maropitant (antiemetico)",
+        "metoclopramida",
+        "ranitidina o omeprazol",
+        "probioticos y protectores intestinales (caolin, pectina)"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema digestivo"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "letargia leve a moderada",
+        "perfusion": "normal (o tiempo de llenado capilar aumentado si hay deshidratacion)",
+        "temperatura": "normal (o febricula segun la causa)",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal o taquicardia leve por deshidratacion",
+        "hidratacion": "deshidratacion 5 por ciento a 8 por ciento",
+        "dolor": "moderado (colico intestinal)",
+        "ingesta_vomito_anorexia": "vomitos activos y anorexia menor a 24h",
+        "eliminacion_diarrea_hematuria": "diarrea aguda sin sangre visible",
+        "duracion_progresion": "menor a 24h o 24-72h"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 6.0,
+        "evaluacion": [
+          "condicion general: deficiente / cuidado.",
+          "los vomitos y diarreas continuas desestabilizan rapidamente el balance hidrico del paciente.",
+          "requiere intervencion rapida para prevenir choque hipovolemico o desequilibrios electroliticos."
+        ]
+      }
+    },
+    {
+      "id": "enfermedad_renal_cronica",
+      "enfermedad": "enfermedad renal cronica",
+      "nombre_completo": "insuficiencia renal cronica (irc)",
+      "sintomas": [
+        "poliuria (orina en exceso) y polidipsia (mucha sed)",
+        "perdida progresiva de peso",
+        "halitosis uremica (olor a amoniaco en la boca)",
+        "vomitos cronicos o nauseas",
+        "pelaje opaco y deslucido"
+      ],
+      "pruebas": [
+        "quimica sanguinea (creatinina, urea, sdma y fosforo)",
+        "urianalisis completo (densidad urinaria y relacion proteina/creatinina)",
+        "ecografia renal"
+      ],
+      "tratamiento": [
+        "dieta renal de prescripcion baja en fosforo y sodio",
+        "fluidoterapia subcutanea u oral continua",
+        "manejo de la presion arterial y proteinuria"
+      ],
+      "medicamentos": [
+        "benazepril o telmisartan (si hay proteinuria o hipertension)",
+        "quelantes de fosforo (carbonato de calcio, quitosano)",
+        "antieticos en episodios de nausea"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema urinario",
+        "sistema metabolico"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "letargia moderada a severa (por toxinas uremicas)",
+        "perfusion": "normal o mucosas palidas (anemia secundaria)",
+        "temperatura": "normal o hipotermia en fases avanzadas",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "deshidratacion constante 5 por ciento a 10 por ciento",
+        "dolor": "ausente a leve",
+        "ingesta_vomito_anorexia": "anorexia progresiva y vomitos intermitentes",
+        "eliminacion_diarrea_hematuria": "poliuria marcada",
+        "duracion_progresion": "mayor a 72h (cronico de meses o anos)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 5.0,
+        "evaluacion": [
+          "condicion general: deficiente.",
+          "compromiso metabolico progresivo e irreversible.",
+          "la acumulacion de toxinas en sangre disminuye progresivamente la calidad de vida y el estado nutricional."
+        ]
+      }
+    },
+    {
+      "id": "parvovirus_canino",
+      "enfermedad": "parvovirosis canina",
+      "nombre_completo": "infeccion por parvovirus canino tipo 2",
+      "sintomas": [
+        "diarrea severa fetida con sangre (hemorragica)",
+        "vomitos incesantes e intractable",
+        "depresion y letargia extrema",
+        "deshidratacion rapida y marcada",
+        "fiebre o hipotermia severa"
+      ],
+      "pruebas": [
+        "test rapido de inmunocromatografia en heces (antigeno cpv)",
+        "hemograma (leucopenia y neutropenia marcadas)"
+      ],
+      "tratamiento": [
+        "hospitalizacion e intubacion de fluidos endovenosos agresiva",
+        "control de nauseas y vomitos",
+        "prevencion de sepsis bacteriana secundaria",
+        "soporte nutricional asistido"
+      ],
+      "medicamentos": [
+        "maropitant u ondansetron",
+        "antibioticos de amplio espectro (ampicilina, enrofloxacino, metronidazol)",
+        "analgesicos para dolor visceral",
+        "protectores gastricos"
+      ],
+      "especie": [
+        "caninos"
+      ],
+      "sistema_afectado": [
+        "sistema digestivo",
+        "sistema inmunitario",
+        "sistema circulatorio"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "estupor o letargia severa",
+        "perfusion": "tiempo de llenado capilar prolongado y mucosas palidas",
+        "temperatura": "fiebre alta o hipotermia (signo de shock septico)",
+        "respiracion": "taquipnea leve",
+        "frecuencia_cardiaca": "taquicardia marcada",
+        "hidratacion": "deshidratacion severa (mayor al 10 por ciento)",
+        "dolor": "severo (enteritis aguda)",
+        "ingesta_vomito_anorexia": "vomitos severos y anorexia absoluta mayor a 24h",
+        "eliminacion_diarrea_hematuria": "diarrea disenterica (sangre abundante en heces)",
+        "duracion_progresion": "empeorando activamente (menor a 24h)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 2.5,
+        "evaluacion": [
+          "condicion general: alerta critica / emergencia vital.",
+          "destruccion masiva de la vellosidad intestinal con shock endotoxico.",
+          "riesgo inminente de muerte sin atencion veterinaria intensiva inmediata."
+        ]
+      }
+    },
+    {
+      "id": "enfermedad_periodontal",
+      "enfermedad": "enfermedad periodontal",
+      "nombre_completo": "periodontitis / gingivitis cronica",
+      "sintomas": [
+        "halitosis intensa (mal aliento)",
+        "acumulacion evidente de sarro (calculo dental)",
+        "encias rojas, inflamadas o sangrantes (gingivitis)",
+        "dificultad o dolor al masticar alimento seco",
+        "perdida de piezas dentales"
+      ],
+      "pruebas": [
+        "inspeccion clinica oral y sondaje periodontal",
+        "radiografia intraoral dental"
+      ],
+      "tratamiento": [
+        "profilaxis dental profesional bajo anestesia general (detartraje y pulido)",
+        "extraccion de piezas dentales viables o con resorcion osea",
+        "higiene oral domiciliaria continua (cepillado o geles)"
+      ],
+      "medicamentos": [
+        "antisepticos orales (clorhexidina en gel)",
+        "antibioticos especificos para cavidad oral (espiramicina con metronidazol, clindamicina)",
+        "analgesicos (meloxicam)"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema digestivo (cavidad oral)"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "leve a moderado (al comer)",
+        "ingesta_vomito_anorexia": "preferencia por alimento humedo, inapetencia ocasional",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "mayor a 72h (cronico de meses)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 7.5,
+        "evaluacion": [
+          "condicion general: regular / muy bueno.",
+          "el paciente suele estar clinicamente estable pero padece dolor oral cronico.",
+          "riesgo de traslocacion bacteriana a organos vitales (corazon, rinon) si no se trata el foco infeccioso."
+        ]
+      }
+    },
+    {
+      "id": "osteoartritis_artrosis",
+      "enfermedad": "osteoartritis / enfermedad articular degenerativa",
+      "nombre_completo": "osteoartrosis degenerativa canina y felina",
+      "sintomas": [
+        "dificultad o lentitud para levantarse o acostarse",
+        "renuencia a saltar, subir escaleras o jugar",
+        "rigidez articular (especialmente al despertar)",
+        "renquera o cojera intermitente",
+        "cambios de comportamiento o irritabilidad por dolor"
+      ],
+      "pruebas": [
+        "examen ortopedico clinico (palpacion y manipulacion articular)",
+        "radiografia ortopedica simple de articulaciones afectadas"
+      ],
+      "tratamiento": [
+        "control estricto de peso para reducir carga sobre articulaciones",
+        "ejercicio moderado y de bajo impacto (fisioterapia, hidroterapia)",
+        "adecuacion ambiental (rampas, camas ortopedicas)"
+      ],
+      "medicamentos": [
+        "antiinflamatorios no esteroideos (meloxicam, carprofeno, firocoxib, robenacoxib)",
+        "condroprotectores (glucosamina, condroitin sulfato)",
+        "anticuerpos monoclonales contra dolor artritico (bedinvetmab / frunevetmab)"
+      ],
+      "especie": [
+        "caninos",
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema musculoesqueletico"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "normal o ligera irritabilidad por molestia",
+        "perfusion": "normal",
+        "temperatura": "normal",
+        "respiracion": "normal",
+        "frecuencia_cardiaca": "normal",
+        "hidratacion": "normal",
+        "dolor": "moderado a severo (segun el grado de degeneracion)",
+        "ingesta_vomito_anorexia": "normal",
+        "eliminacion_diarrea_hematuria": "normal",
+        "duracion_progresion": "mayor a 72h (altamente cronico)"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 7.0,
+        "evaluacion": [
+          "condicion general: regular.",
+          "sin peligro vital inmediato, pero afecta gravemente el bienestar cotidiano.",
+          "el dolor continuo limita la movilidad y reduce drasticamente la actividad normal de la mascota."
+        ]
+      }
+    },
+    {
+      "id": "flutd_cistitis_idiopatica",
+      "enfermedad": "enfermedad del tracto urinario inferior felino (flutd)",
+      "nombre_completo": "cistitis idiopatica felina / obstruccion uretral",
+      "sintomas": [
+        "disuria (esfuerzo o dolor al orinar)",
+        "estranguria (orinar muy poco o gota a gota)",
+        "hematuria (presencia de sangre en la orina)",
+        "vocalizaciones de dolor en el arenero",
+        "lamido excesivo de la zona genital"
+      ],
+      "pruebas": [
+        "urianalisis completo (sedimento, presencia de cristales y ph)",
+        "ecografia de vejiga",
+        "radiografia abdominal (para descartar urolitos/calculos)"
+      ],
+      "tratamiento": [
+        "desobstruccion uretral mediante sonda bajo anestesia (si hay bloqueo)",
+        "enriquecimiento ambiental para reducir el estres (difusores de feromonas)",
+        "incremento en el consumo de agua (alimentacion humeda)",
+        "dietas urinarias de prescripcion"
+      ],
+      "medicamentos": [
+        "analgesicos y espasmoliticos (buprenorfina, prazosina)",
+        "antiinflamatorios non-esteroideos (si no hay fallo renal)",
+        "glicosaminoglicanos para proteger el urotelio"
+      ],
+      "especie": [
+        "felinos"
+      ],
+      "sistema_afectado": [
+        "sistema urinario"
+      ],
+      "estado_clinico_triage": {
+        "estado_mental": "letargia moderada a severa si esta obstruido",
+        "perfusion": "normal (comprometida si hay hiperpotasemia por obstruccion)",
+        "temperatura": "normal o hipotermia si hay fallo renal agudo",
+        "respiracion": "taquipnea leve por dolor",
+        "frecuencia_cardiaca": "bradicardia o arritmia si esta obstruido con potasio alto",
+        "hidratacion": "normal a deshidratado",
+        "dolor": "severo",
+        "ingesta_vomito_anorexia": "anorexia menor a 24h y vomitos si hay uremia",
+        "eliminacion_diarrea_hematuria": "anuria (imposibilidad total de orinar) o oliguria con hematuria",
+        "duracion_progresion": "24-72h o empeorando activamente"
+      },
+      "condicion_general_escala_1_10": {
+        "puntaje": 3.0,
+        "evaluacion": [
+          "condicion general: alerta critica (si existe obstruccion uretral total).",
+          "el bloqueo urinario produce insuficiencia renal aguda e hiperpotasemia en 24-48 horas.",
+          "requiere intervencion medica de emergencia inmediata para sondaje y vaciado vesical."
+        ]
+      }
+    }
+  ]
+}
